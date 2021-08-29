@@ -4,7 +4,7 @@ document.querySelector(".navbar-btn")
     .classList.toggle("change");
 });
 
-setTimeout(fade_out, 2000);
+setTimeout(fade_out, 1500);
 
 function fade_out() {
   $("#mydiv").fadeOut().empty();
