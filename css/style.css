@@ -1,0 +1,150 @@
+.all {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #10b1a1 50%, #10b1a1 100%);
+}
+
+.logo {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 350px;
+    position: absolute;
+    left: 12%;
+    top: 10%;
+}
+
+.hand {
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    z-index: 1;
+}
+
+.hand svg {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    
+}
+#poster{
+    height: 100vh;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+}
+#poster img{
+    height: 100vh;
+    position: absolute;
+}
+.navbar-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: scale(0) rotate(-180deg);
+    transition: transform .5s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    top: 43%;
+    right: 12%;
+}
+#navbar{
+    top: 28%;
+    right: 7%;
+}
+.change .navbar {
+    transform: scale(1) rotate(0);
+}
+
+.navbar-link {
+    position: absolute;
+}
+
+.navbar-link svg {
+    font-size: 3rem;
+    color: #10b1a1;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover svg {
+    color: #0c776c;
+}
+
+.navbar-link:nth-child(1) {
+    top: 2rem;
+}
+
+.navbar-link:nth-child(2) {
+    top: 5rem;
+    right: 2rem;
+}
+
+.navbar-link:nth-child(3) {
+    bottom: 5rem;
+    right: 2rem;
+}
+
+.navbar-link:nth-child(4) {
+    bottom: 2rem;
+}
+
+.navbar-link:nth-child(5) {
+    bottom: 5rem;
+    left: 2rem;
+}
+
+.navbar-link:nth-child(6) {
+    top: 5rem;
+    left: 2rem;
+}
+
+.navbar-btn {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    top: 60%;
+    right: 20%;
+}
+
+.navbar-btn {
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.5s;
+}
+
+.change .navbar-btn svg {
+    transform: rotate(45deg);
+}
+#post{
+    top: 45%;
+    right: 15%;
+}
+@media(max-width:575px) {
+    .logo img {
+        width: 300px;
+        left: 15%;
+        top: 25%;
+    }
+}
